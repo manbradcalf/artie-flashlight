@@ -10,7 +10,7 @@
  ***************************************************/
 
 // Your Firebase instance where we will listen and write search results
-exports.FB_URL   = process.env.FB_URL || 'https://<YOUR APP>.firebaseio.com';
+exports.FB_URL   = process.env.FB_URL || 'https://bookyrself-staging.firebaseio.com';
 
 // The path in your Firebase where clients will write search requests
 exports.FB_REQ   = process.env.FB_REQ || 'search/request';
@@ -20,7 +20,7 @@ exports.FB_RES   = process.env.FB_RES || 'search/response';
 
 // See https://firebase.google.com/docs/server/setup for instructions
 // to auto-generate the service-account.json file
-exports.FB_SERVICEACCOUNT = process.env.FB_ACC || 'service-account.json';
+exports.FB_SERVICEACCOUNT = process.env.FB_ACC || 'bookyrself-staging-firebase-adminsdk-leedp-751387a632.json';
 
 /** ElasticSearch Settings
  *********************************************/
@@ -61,20 +61,25 @@ else {
  ****************************************************/
 exports.paths = [
   {
-    path : "users",
+    path : "0/convos",
     index: "firebase",
-    type : "user"
+    type : "convos"
   },
   {
-    path  : "messages",
+    path  : "0/users",
     index : "firebase",
-    type  : "message",
-    fields: ['msg', 'name'],
-    filter: function(data) { return data.name !== 'system'; }
+    type  : "users"
+    // fields: ['msg', 'name'],
+    // filter: function(data) { return data.name !== 'system'; }
     // see readme
     //, parser: function(data) { data.msg = data.msg.toLowerCase(); return data; }
     // see readme
     //, refBuilder: function(ref, path) { return ref.orderBy(path.sortField).startAt(Date.now()); }
+  },
+  {
+    path : "0/tags",
+    index: "firebase",
+    type : "tags"
   }
 ];
 
