@@ -25,22 +25,22 @@ exports.FB_SERVICEACCOUNT = process.env.FB_ACC || 'bookyrself-staging-firebase-a
 /** ElasticSearch Settings
  *********************************************/
 
-if( process.env.BONSAI_URL ) {
-  processBonsaiUrl(exports, process.env.BONSAI_URL);
-}
-else {
-  // ElasticSearch server's host URL
-  exports.ES_HOST  = process.env.ES_HOST || 'localhost';
+// if( process.env.BONSAI_URL ) {
+  processBonsaiUrl(exports, 'https://e7prd93c:hvsdor2rg91j5jxc@box-4751391.us-east-1.bonsaisearch.net');
+// }
+// else {
+//   // ElasticSearch server's host URL
+//   exports.ES_HOST  = process.env.ES_HOST || 'localhost';
 
-  // ElasticSearch server's host port
-  exports.ES_PORT  = process.env.ES_PORT || '9200';
+//   // ElasticSearch server's host port
+//   exports.ES_PORT  = process.env.ES_PORT || '9200';
 
-  // ElasticSearch username for http auth
-  exports.ES_USER  = process.env.ES_USER || null;
+//   // ElasticSearch username for http auth
+//   exports.ES_USER  = process.env.ES_USER || null;
 
-  // ElasticSearch password for http auth
-  exports.ES_PASS  = process.env.ES_PASS || null;
-}
+//   // ElasticSearch password for http auth
+//   exports.ES_PASS  = process.env.ES_PASS || null;
+// }
 
 /** Paths to Monitor
  *
