@@ -80,6 +80,7 @@ exports.paths = [
 
 // Paths can also be stored in Firebase! See README for details.
 //exports.paths = process.env.FB_PATHS || null;
+//
 
 // Additional options for ElasticSearch client
 exports.ES_OPTS = {
