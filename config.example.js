@@ -61,25 +61,34 @@ else {
  ****************************************************/
 exports.paths = [
   {
-    path : "0/convos",
+    path : "users",
     index: "firebase",
-    type : "convos"
+    type : "users"
   },
   {
-    path  : "0/users",
+    path  : "events",
     index : "firebase",
-    type  : "users"
+    type  : "events"
     // fields: ['msg', 'name'],
     // filter: function(data) { return data.name !== 'system'; }
     // see readme
-    //, parser: function(data) { data.msg = data.msg.toLowerCase(); return data; }
+    // , parser: function(data) { data.msg = data.msg.toLowerCase(); return data; }
     // see readme
     //, refBuilder: function(ref, path) { return ref.orderBy(path.sortField).startAt(Date.now()); }
   },
   {
-    path : "0/tags",
+    path : "users",
     index: "firebase",
-    type : "tags"
+    type : "user_tags",
+    fields: ['tags', 'username'],
+    // parser: function(data) { return [data.username, data.tags];}
+  },
+  {
+    path : "events",
+    index: "firebase",
+    type : "event_tags",
+    fields: ['tags', 'event_name'],
+    // parser: function(data) { return [data.event_name, data.tags];}
   }
 ];
 
