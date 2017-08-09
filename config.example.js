@@ -20,7 +20,7 @@ exports.FB_RES   = process.env.FB_RES || 'search/response';
 
 // See https://firebase.google.com/docs/server/setup for instructions
 // to auto-generate the service-account.json file
-exports.FB_SERVICEACCOUNT = process.env.FB_ACC || 'bookyrself-staging-firebase-adminsdk-leedp-751387a632.json';
+exports.FB_SERVICEACCOUNT = process.env.FB_ACC || 'heroku-bookyrself-staging-firebase-adminsdk-leedp-cd1a228863.json';
 
 /** ElasticSearch Settings
  *********************************************/
