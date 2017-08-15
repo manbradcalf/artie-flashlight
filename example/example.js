@@ -109,8 +109,8 @@
 
     // when a value arrives from the database, stop listening
     // and remove the temporary data from the database
-    snap.ref.off('value', showResults);
-    snap.ref.remove();
+    // snap.ref.off('value', showResults);
+    // snap.ref.remove();
 
     // the rest of this just displays data in our demo and probably
     // isn't very interesting
