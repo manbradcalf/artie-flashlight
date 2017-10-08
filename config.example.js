@@ -26,7 +26,7 @@ exports.FB_SERVICEACCOUNT = process.env.FB_ACC || 'heroku-bookyrself-staging-fir
  *********************************************/
 
 // if( process.env.BONSAI_URL ) {
-  processBonsaiUrl(exports, 'https://e7prd93c:hvsdor2rg91j5jxc@box-4751391.us-east-1.bonsaisearch.net');
+  processBonsaiUrl(exports, 'https://nw2oflyn:qqrnk317w22lswh8@pine-4785036.us-east-1.bonsaisearch.net');
 // }
 // else {
 //   // ElasticSearch server's host URL
