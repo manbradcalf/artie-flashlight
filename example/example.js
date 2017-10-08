@@ -7,7 +7,12 @@
   // Set the configuration for your app
   // TODO: Replace with your project's config object
   var config = {
-    databaseURL: "https://bookyrself-staging.firebaseio.com/"
+    apiKey: "AIzaSyCTseIzPaKSJnBb_R8nws49Rmv1HzRNejE",
+    authDomain: "bookyrself-staging.firebaseapp.com",
+    databaseURL: "https://bookyrself-staging.firebaseio.com/",
+    projectId: "bookyrself-staging",
+    storageBucket: "bookyrself-staging.appspot.com",
+    messagingSenderId: "766322026609"
   };
 
   // TODO: Replace this with the path to your ElasticSearch queue
@@ -104,8 +109,6 @@
 
     // when a value arrives from the database, stop listening
     // and remove the temporary data from the database
-    snap.ref.off('value', showResults);
-    snap.ref.remove();
 
     // the rest of this just displays data in our demo and probably
     // isn't very interesting
