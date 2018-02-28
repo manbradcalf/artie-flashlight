@@ -30,7 +30,7 @@ exports.FB_SERVICEACCOUNT = process.env.FB_ACC || 'heroku-bookyrself-staging-fir
 // }
 // else {
   // ElasticSearch server's host URL
-  exports.ES_HOST  = process.env.ES_HOST || 'localhost'; 
+  exports.ES_HOST  = process.env.ES_HOST || 'localhost';
 
   // ElasticSearch server's host port
   exports.ES_PORT  = process.env.ES_PORT || '9200';
