@@ -25,10 +25,10 @@ exports.FB_SERVICEACCOUNT = process.env.FB_ACC || 'heroku-bookyrself-staging-fir
 /** ElasticSearch Settings
  *********************************************/
 
-// if( process.env.BONSAI_URL ) {
-//   processBonsaiUrl(exports, 'https://nw2oflyn:qqrnk317w22lswh8@pine-4785036.us-east-1.bonsaisearch.net');
-// }
-// else {
+if( process.env.BONSAI_URL ) {
+  processBonsaiUrl(exports, 'https://nw2oflyn:qqrnk317w22lswh8@pine-4785036.us-east-1.bonsaisearch.net');
+}
+else {
   // ElasticSearch server's host URL
   exports.ES_HOST  = process.env.ES_HOST || 'localhost';
 
@@ -40,7 +40,7 @@ exports.FB_SERVICEACCOUNT = process.env.FB_ACC || 'heroku-bookyrself-staging-fir
 
   // ElasticSearch password for http auth
   exports.ES_PASS  = process.env.ES_PASS || null;
-// }
+}
 
 /** Paths to Monitor
  *
