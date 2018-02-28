@@ -26,20 +26,20 @@ exports.FB_SERVICEACCOUNT = process.env.FB_ACC || 'heroku-bookyrself-staging-fir
  *********************************************/
 
 // if( process.env.BONSAI_URL ) {
-  processBonsaiUrl(exports, 'https://nw2oflyn:qqrnk317w22lswh8@pine-4785036.us-east-1.bonsaisearch.net');
+//   processBonsaiUrl(exports, 'https://nw2oflyn:qqrnk317w22lswh8@pine-4785036.us-east-1.bonsaisearch.net');
 // }
 // else {
-//   // ElasticSearch server's host URL
-//   exports.ES_HOST  = process.env.ES_HOST || 'localhost';
+  // ElasticSearch server's host URL
+  exports.ES_HOST  = process.env.ES_HOST || 'localhost';
 
-//   // ElasticSearch server's host port
-//   exports.ES_PORT  = process.env.ES_PORT || '9200';
+  // ElasticSearch server's host port
+  exports.ES_PORT  = process.env.ES_PORT || '9200';
 
-//   // ElasticSearch username for http auth
-//   exports.ES_USER  = process.env.ES_USER || null;
+  // ElasticSearch username for http auth
+  exports.ES_USER  = process.env.ES_USER || null;
 
-//   // ElasticSearch password for http auth
-//   exports.ES_PASS  = process.env.ES_PASS || null;
+  // ElasticSearch password for http auth
+  exports.ES_PASS  = process.env.ES_PASS || null;
 // }
 
 /** Paths to Monitor
@@ -62,13 +62,13 @@ exports.FB_SERVICEACCOUNT = process.env.FB_ACC || 'heroku-bookyrself-staging-fir
 exports.paths = [
   {
     path : "users",
-    index: "firebase",
-    type : "users"
+    index: "users",
+    type : "user"
   },
   {
     path  : "events",
-    index : "firebase",
-    type  : "events"
+    index : "events",
+    type  : "event"
     // fields: ['msg', 'name'],
     // filter: function(data) { return data.name !== 'system'; }
     // see readme
