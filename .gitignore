@@ -4,3 +4,16 @@
 service-account.json
 config.js
 app.yaml
+404.html
+citystate
+index.html
+location
+mappings:
+properties
+suggest
+type
+type:
+{
+}
+},
+example/Use RETROFIT to POST to db search:request
