@@ -63,12 +63,14 @@ exports.paths = [
   {
     path : "users",
     index: "users",
-    type : "user"
+    type : "user",
+    fields: ['tags', 'username','citystate', 'bio']
   },
   {
     path  : "events",
     index : "events",
-    type  : "event"
+    type  : "event",
+    fields: ['tags', 'eventname', 'citystate', 'description']
     // fields: ['msg', 'name'],
     // filter: function(data) { return data.name !== 'system'; }
     // see readme
