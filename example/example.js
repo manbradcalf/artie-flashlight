@@ -92,6 +92,8 @@
     }
   }
 
+  // !!! TODO:  Refactor doSearch and showResults so they query ES directly !!!
+
   // conduct a search by writing it to the search/request path
   function doSearch(query) {
     var ref = database.ref().child(PATH);

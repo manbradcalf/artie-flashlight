@@ -70,7 +70,7 @@ exports.paths = [
     path  : "events",
     index : "events",
     type  : "event",
-    fields: ['tags', 'eventname', 'citystate', 'description']
+    fields: ['tags', 'eventname', 'citystate', 'description', 'host','date']
     // fields: ['msg', 'name'],
     // filter: function(data) { return data.name !== 'system'; }
     // see readme
