@@ -1,0 +1,35 @@
+[debug] [2019-04-24T21:04:04.792Z] ----------------------------------------------------------------------
+[debug] [2019-04-24T21:04:04.794Z] Command:       /usr/local/Cellar/node/8.2.1/bin/node /usr/local/bin/firebase serve
+[debug] [2019-04-24T21:04:04.795Z] CLI Version:   3.9.2
+[debug] [2019-04-24T21:04:04.795Z] Platform:      darwin
+[debug] [2019-04-24T21:04:04.795Z] Node Version:  v8.2.1
+[debug] [2019-04-24T21:04:04.795Z] Time:          Wed Apr 24 2019 17:04:04 GMT-0400 (EDT)
+[debug] [2019-04-24T21:04:04.795Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-04-24T21:04:04.807Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-04-24T21:04:04.807Z] > authorizing via signed-in user
+[debug] [2019-04-24T21:04:04.809Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bookyrself-staging  
+ Wed Apr 24 2019 17:04:04 GMT-0400 (EDT)
+[debug] [2019-04-24T21:04:05.509Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-24T21:04:05.510Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bookyrself-staging/tokens  
+ Wed Apr 24 2019 17:04:05 GMT-0400 (EDT)
+[debug] [2019-04-24T21:04:05.930Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/benmedcalf/BookYrself'...
+[info] 
+[debug] [2019-04-24T21:04:05.933Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bookyrself-staging  
+ Wed Apr 24 2019 17:04:05 GMT-0400 (EDT)
+[debug] [2019-04-24T21:04:06.217Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-24T21:04:06.217Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/766322026609/clients/_:getWebAppConfig  
+ Wed Apr 24 2019 17:04:06 GMT-0400 (EDT)
+[debug] [2019-04-24T21:04:06.663Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
+[debug] [2019-04-24T21:04:06.678Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bookyrself-staging  
+ Wed Apr 24 2019 17:04:06 GMT-0400 (EDT)
+[debug] [2019-04-24T21:04:06.814Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-24T21:04:06.815Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/766322026609/clients/_:getWebAppConfig  
+ Wed Apr 24 2019 17:04:06 GMT-0400 (EDT)
+[debug] [2019-04-24T21:04:07.135Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: flashlight/example
+[info] ✔  hosting: Local server: http://localhost:5004
+
